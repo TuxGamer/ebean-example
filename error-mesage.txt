@@ -1,0 +1,17 @@
+Connected to the target VM, address: '127.0.0.1:59006', transport: 'socket'
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "io.ebeaninternal.server.deploy.id.ImportedId.buildImport(io.ebeaninternal.server.deploy.IntersectionBuilder)" because "this.importedId" is null
+	at io.ebeaninternal.server.deploy.BeanPropertyAssocMany.initIntersectionTable(BeanPropertyAssocMany.java:382)
+	at io.ebeaninternal.server.deploy.BeanPropertyAssocMany.setEbeanServer(BeanPropertyAssocMany.java:373)
+	at io.ebeaninternal.server.deploy.BeanDescriptor.setEbeanServer(BeanDescriptor.java:437)
+	at io.ebeaninternal.server.deploy.BeanDescriptorManager.setEbeanServer(BeanDescriptorManager.java:269)
+	at io.ebeaninternal.server.core.DefaultServer.<init>(DefaultServer.java:141)
+	at io.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:108)
+	at io.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:30)
+	at io.ebean.DatabaseFactory.createInternal(DatabaseFactory.java:136)
+	at io.ebean.DatabaseFactory.create(DatabaseFactory.java:85)
+	at io.ebean.config.DatabaseConfig.build(DatabaseConfig.java:556)
+	at org.example.ebean.Example.main(Example.java:17)
+Disconnected from the target VM, address: '127.0.0.1:59006', transport: 'socket'
